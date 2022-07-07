@@ -1,284 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*----------FUENTES----------}*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*VARIABLES*/
+footer {
+  background: #002f47;
+  color: white; }
 
-
-/*-----HEADER----------*/
-.bg_nav-oscuro {
-    background-color: #002f47;
-}
-
-.nav-link {
+header {
+  background-color: #002f47; }
+  header .nav-link {
     text-align: center;
-    font-family: "CrimsonText";
+    font-family: "CrimstonText";
     font-size: 1.3rem;
     font-weight: normal;
-    text-transform: uppercase;
-}
-
-.navbar-dark .navbar-nav .nav-link   {
-    color: #fdb44b;
-    font-weight: 15rem;
-}
-
-.nav-link active {
-    color: #fdb44b;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #205375;
-}
-
-.navbar-toggler {
+    text-transform: uppercase; }
+  header .navbar-dark .navbar-nav .nav-link {
+    color: #d1b064;
+    font-weight: 15rem; }
+  header .nav-link active {
+    color: #d1b064; }
+  header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #4a7486; }
+  header .navbar-toggler {
     background-color: #012131;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 0.3rem;
-}
-.nav-item {
-    color: #fdb44b;
-}
+    margin-right: 0.3rem; }
+  header .nav-item {
+    color: #d1b064; }
+  header .navColor {
+    color: light; }
+
 a {
-    color: #fdb44b;
-    font-family: "CrimsonText";
-    text-decoration: none;
-    font-weight: 450;
-    text-align: center;
-}
-.navColor {
-    color: #fdb44b;
-}
+  color: light;
+  font-family: "CrimstonText";
+  text-decoration: none;
+  font-weight: 450;
+  text-align: center; }
 
 /* GEN */
-
 h1 {
-    color:white;
-    font-family: "CrimsonText";
-    font-size: 5rem;
-}
+  color: white;
+  font-family: "CrimstonText";
+  font-size: 5rem; }
 
 h2 {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 1.8rem;
-    color: #205375;
-}
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #4a7486; }
 
 h3 {
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 2rem;
-    color: #205375;
-}
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 2rem;
+  color: #4a7486; }
 
 p {
-    font-family: "Montserrat";
-    font-size: 1.1rem;
-    color: #205375;
-}
-
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  color: #205375; }
 
 .h2_center {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    text-decoration: underline;
-}
-/***HOME****/
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-decoration: underline; }
 
+/***HOME****/
 .img-Home {
-    background: url(../images/fachadacasa.jpg);
-    min-height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
+  background: url(../images/fachadacasa.jpg);
+  min-height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
 
 .img-Home h1 {
-color:white;
-font-family: "CrimsonText";
-text-align: center;
-font-size: 5rem;
-clear: left;
-top: 20rem;
-left: 0;
-right: 0;
-position: absolute;
-text-shadow: 2px 2px 4px #fdb44b;
-margin-bottom: 0.4rem;
-font-weight: 600;
-line-height: 1.2;
-}
+  color: white;
+  font-family: "CrimstonText";
+  text-align: center;
+  font-size: 5rem;
+  clear: left;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-shadow: 2px 2px 4px #d1b064;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  line-height: 1.2; }
 
 .h2_home {
-    color:#205375;
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-decoration: underline;
-    font-weight: 800;
-    font-size: 2rem;
-}
-/*-----NUESTRAEMPRESA-----*/
-
-.img-Nosotros {
-    background: url(../images/quehacemos.jpg);
-    min-height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-.img-Nosotros h1 {
-color:white;
-font-family: "CrimsonText";
-text-align: center;
-font-size: 5rem;
-clear: left;
-top: 20rem;
-left: 0;
-right: 0;
-position: absolute;
-text-shadow: 2px 2px 4px #fdb44b;
-margin-bottom: 0.4rem;
-font-weight: 600;
-line-height: 1.2;
-}
-
-.empresa-0 {
-    box-shadow: 0px 10px 10px #333;
-    border-radius: 10px;
-    margin: 20px 10px;
-    border: 1px solid black;
-    display: flex;
-}
-.empresa-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.empresa-1 h2 {
-    font-size: 28px;
-    text-align: center;
-}
-.empresa-1 p {
-    padding: 5px;
-    text-align: justify;
-}
-.empresa-1 h2:hover {
-    transform: scale(2);
-    cursor: pointer;
-}
-
-.botonEmpresa {
-    display: flex;
-    justify-content: center;
-    color: #205375;
-}
-.botonEmpresa button {
-    color: #002f47;
-    background-color: #205375;
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-}
-
-/*----PAGINA SERVICIOS----*/
-
-.img-Servicios {
-    background: url(../images/enobra.jpg);
-    min-height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-.img-Servicios h1 {
-    color:white;
-    font-family: "CrimsonText";
-    text-align: center;
-    font-size: 5rem;
-    clear: left;
-    top: 20rem;
-    left: 0;
-    right: 0;
-    position: absolute;
-    text-shadow: 2px 2px 4px #fdb44b;
-    margin-bottom: 0.4rem;
-    font-weight: 600;
-    line-height: 1.2;
-    }
-
-    /*----- PAGINA CONTACTO ----------*/
-
-    
-.img-Contacto {
-    background: url(../images/contacto.jpg);
-    min-height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-.img-Contacto h1 {
-    color:white;
-    font-family: "CrimsonText";
-    text-align: center;
-    font-size: 5rem;
-    clear: left;
-    top: 20rem;
-    left: 0;
-    right: 0;
-    position: absolute;
-    text-shadow: 2px 2px 4px #fdb44b;
-    margin-bottom: 0.4rem;
-    font-weight: 600;
-    line-height: 1.2;
-    }
-
-.mainContacto {
-    background-color: #002f47;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.formularioDistribucion {
-    display: flex;
-    flex-direction: column;
-    color: #002f47;
-    font-size: 20px;
-    font-family: "RobotoThin";
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 25px;
-    margin-top: 20px;
-    background-color: #e7cf97;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer{
-    background: #002f47;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .img-Nosotros h1 {
-        font-size: 3rem;
-        }
-}
+  color: #4a7486;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-decoration: underline;
+  font-weight: 800;
+  font-size: 2rem; }
